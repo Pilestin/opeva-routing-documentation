@@ -2,6 +2,20 @@
 
 Bu doküman, Docusaurus sitenizi private GitHub repository'nizden ücretsiz olarak nasıl yayınlayacağınızı adım adım açıklar.
 
+## ⚠️ EN YAYGIN SORUN: Sadece README Gözüküyor
+
+**Eğer GitHub Pages'de sadece README dosyası görünüyor ve Docusaurus sitesi gözükmüyorsa:**
+
+**NEDEN:** GitHub Pages "Deploy from a branch" modunda çalışıyor. Bu modda GitHub, repository'nin kök dizinindeki README.md dosyasını gösterir.
+
+**ÇÖZÜM:** GitHub Pages'i "GitHub Actions" moduna geçirin:
+
+1. Repository Settings → Pages
+2. Source: **"GitHub Actions"** seçin (NOT "Deploy from a branch")
+3. Kaydet
+
+Bu değişiklikten sonra site düzgün çalışacaktır!
+
 ## 📋 Gereksinimler
 
 - ✅ GitHub hesabı

@@ -2,6 +2,30 @@
 
 Bu web sitesi [Docusaurus](https://docusaurus.io/) kullanılarak oluşturulmuştur.
 
+## ⚠️ ÖNEMLİ: GitHub Pages Kurulumu
+
+**Bu bir React/Docusaurus uygulamasıdır ve GitHub Pages'de düzgün çalışması için özel yapılandırma gerekir.**
+
+Eğer GitHub Pages'de sadece bu README dosyasını görüyorsanız, aşağıdaki adımları takip edin:
+
+### GitHub Pages'i Doğru Şekilde Yapılandırma:
+
+1. **GitHub repository Settings'e gidin**
+2. **Sol menüden "Pages" seçeneğini tıklayın**
+3. **"Source" (Kaynak) bölümünde:**
+   - ❌ "Deploy from a branch" KULLANMAYIN
+   - ✅ **"GitHub Actions"** seçeneğini seçin
+4. **Kaydedin ve birkaç dakika bekleyin**
+
+Bu değişiklikten sonra:
+- Her `main` branch'e push yaptığınızda site otomatik olarak build edilip deploy edilecektir
+- Site şu adreste erişilebilir olacaktır: **https://pilestin.github.io/opeva-esogu-routing-documentation/**
+- İlk deployment 2-3 dakika sürebilir
+
+**📖 Daha fazla bilgi için:**
+- [Hızlı Kurulum Rehberi](./GITHUB_PAGES_SETUP.md) - 3 adımda kurulum
+- [Detaylı Deployment Kılavuzu](./DEPLOYMENT.md) - Tam rehber ve sorun giderme
+
 ## Kurulum
 
 ```bash
