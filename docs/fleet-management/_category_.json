@@ -1,0 +1,8 @@
+{
+  "label": "Filo Yönetimi",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Client-server mimarisi ile filo yönetim sistemlerinin geliştirilmesi."
+  }
+}
