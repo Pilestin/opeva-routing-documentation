@@ -21,16 +21,15 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://pilestin.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/opeva-esogu-routing-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Pilestin', // Usually your GitHub org/user name.
-  projectName: 'opeva-esogu-routing-documentation', // Usually your repo name.
+  // GitHub pages deployment config
+  organizationName: 'Pilestin', // GitHub kullanıcı adınız
+  projectName: 'opeva-esogu-routing-documentation', // Repo adınız
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'warn', // 'throw' yerine 'warn' yapın
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
