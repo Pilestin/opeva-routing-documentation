@@ -22,7 +22,9 @@ Bu değişiklikten sonra:
 - Site şu adreste erişilebilir olacaktır: **https://pilestin.github.io/opeva-esogu-routing-documentation/**
 - İlk deployment 2-3 dakika sürebilir
 
-Detaylı kurulum talimatları için [DEPLOYMENT.md](./DEPLOYMENT.md) dosyasına bakın.
+**📖 Daha fazla bilgi için:**
+- [Hızlı Kurulum Rehberi](./GITHUB_PAGES_SETUP.md) - 3 adımda kurulum
+- [Detaylı Deployment Kılavuzu](./DEPLOYMENT.md) - Tam rehber ve sorun giderme
 
 ## Kurulum
 

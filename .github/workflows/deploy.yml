@@ -1,3 +1,9 @@
+# Bu workflow, Docusaurus sitesini otomatik olarak build edip GitHub Pages'e deploy eder.
+# Her main branch'e push yapıldığında otomatik olarak çalışır.
+# 
+# ÖNEMLİ: GitHub Pages ayarlarınızda Source olarak "GitHub Actions" seçilmelidir.
+# Settings → Pages → Source → "GitHub Actions" seçin (NOT "Deploy from a branch")
+
 name: Deploy to GitHub Pages
 
 on:
