@@ -1,117 +1,51 @@
-# Elektrikli Araç Rotalama Dökümantasyonu
+# ESOGU OPEVA Rotalama Dökümantasyonu
 
-Bu web sitesi [Docusaurus](https://docusaurus.io/) kullanılarak oluşturulmuştur.
+Bu proje, ESOGÜ OPEVA Elektrikli Araç Filo Yönetimi ve Rota Optimizasyonu sistemi için hazırlanan teknik dökümantasyon sitesidir. Docusaurus framework'ü kullanılarak geliştirilmiştir.
 
-## ⚠️ ÖNEMLİ: GitHub Pages Kurulumu
+## İçindekiler
+1. [Projenin Amacı](#projenin-amacı)
+2. [Dökümantasyon İçeriği](#dökümantasyon-içeriği)
+3. [Kurulum ve Yerel Geliştirme](#kurulum-ve-yerel-geliştirme)
+4. [Derleme (Build)](#derleme-build)
+5. [Deployment (GitHub Pages)](#deployment-github-pages)
 
-**Bu bir React/Docusaurus uygulamasıdır ve GitHub Pages'de düzgün çalışması için özel yapılandırma gerekir.**
+## Projenin Amacı
+Bu dökümantasyonun temel amacı, OPEVA projesi kapsamında geliştirilen filo yönetim sisteminin teknik altyapısını, kullanılan algoritmaları, veri standartlarını ve sistem kurulum süreçlerini merkezi bir kaynakta toplamaktır. Geliştiriciler ve sistem yöneticileri için bir rehber niteliği taşımaktadır.
 
-Eğer GitHub Pages'de sadece bu README dosyasını görüyorsanız, aşağıdaki adımları takip edin:
+## Dökümantasyon İçeriği
+Sitede yer alan ana bölümler şunlardır:
+- **Filo Yönetim Sistemi:** Sistem mimarisi, araç izleme, rota optimizasyonu ve kurulum adımları.
+- **Rotalama Algoritmaları:** ALNS, A*, DQN gibi algoritmaların teknik detayları ve entegrasyon süreçleri.
+- **RoutingML (RML):** Rotalama problemleri için standartlaştırılmış XML veri şeması (v1.05).
+- **ML Pipeline:** Apache Airflow tabanlı makine öğrenmesi süreçleri ve model yönetimi.
+- **Sağlık İzleme:** Prometheus ve Grafana tabanlı mikroservis denetim altyapısı.
 
-### GitHub Pages'i Doğru Şekilde Yapılandırma:
+## Kurulum ve Yerel Geliştirme
 
-1. **GitHub repository Settings'e gidin**
-2. **Sol menüden "Pages" seçeneğini tıklayın**
-3. **"Source" (Kaynak) bölümünde:**
-   - ❌ "Deploy from a branch" KULLANMAYIN
-   - ✅ **"GitHub Actions"** seçeneğini seçin
-4. **Kaydedin ve birkaç dakika bekleyin**
-
-Bu değişiklikten sonra:
-- Her `main` branch'e push yaptığınızda site otomatik olarak build edilip deploy edilecektir
-- Site şu adreste erişilebilir olacaktır: **https://pilestin.github.io/opeva-esogu-routing-documentation/**
-- İlk deployment 2-3 dakika sürebilir
-
-**📖 Daha fazla bilgi için:**
-- [Hızlı Kurulum Rehberi](./GITHUB_PAGES_SETUP.md) - 3 adımda kurulum
-- [Detaylı Deployment Kılavuzu](./DEPLOYMENT.md) - Tam rehber ve sorun giderme
-
-## Kurulum
-
+Bağımlılıkları yüklemek için:
 ```bash
 npm install
 ```
 
-## Yerel Geliştirme
-
+Yerel geliştirme sunucusunu başlatmak için:
 ```bash
 npm start
 ```
+Bu komut sonrası dökümantasyon sitesine yerel ağda `http://localhost:3000` adresinden erişilebilir.
 
-Bu komut yerel bir geliştirme sunucusu başlatır ve tarayıcı penceresini açar. Değişikliklerin çoğu sunucuyu yeniden başlatmaya gerek kalmadan canlı olarak yansıtılır.
+## Derleme (Build)
 
-## Build (Derleme)
-
+Statik dosyaları oluşturmak için:
 ```bash
 npm run build
 ```
+Oluşturulan dosyalar `build` dizini altında yer alır.
 
-Bu komut `build` dizinine statik içerik oluşturur ve herhangi bir statik içerik barındırma hizmeti kullanılarak sunulabilir.
+## Deployment (GitHub Pages)
 
-## Deployment (Dağıtım)
+Bu proje GitHub Actions ile otomatik dağıtım yapacak şekilde yapılandırılmıştır. `main` branch'ine yapılan her push işlemi sonrasında site otomatik olarak güncellenir.
 
-### GitHub Pages ile Otomatik Deployment
+**Önemli Yapılandırma:**
+GitHub repository ayarlarında **Settings > Pages > Source** kısmının **GitHub Actions** olarak seçili olduğundan emin olunmalıdır.
 
-Bu proje, GitHub Actions kullanarak otomatik olarak GitHub Pages'e dağıtılmak üzere yapılandırılmıştır. 
-
-#### İlk Kurulum Adımları:
-
-1. **GitHub Pages'i Etkinleştirin:**
-   - GitHub repository'nizin **Settings** sekmesine gidin
-   - Sol menüden **Pages** seçeneğini tıklayın
-   - **Source** bölümünde **GitHub Actions** seçeneğini seçin
-   - Ayarları kaydedin
-
-2. **Deployment:**
-   - `main` branch'ine her push yaptığınızda, GitHub Actions otomatik olarak siteyi derleyip yayınlayacaktır
-   - İlk deployment işlemi birkaç dakika sürebilir
-   - Deployment tamamlandığında siteniz şu adreste yayında olacaktır:
-     **https://pilestin.github.io/opeva-esogu-routing-documentation/**
-
-3. **Deployment Durumunu Kontrol Etme:**
-   - Repository'nizin **Actions** sekmesine gidin
-   - "Deploy to GitHub Pages" workflow'unu kontrol edin
-   - Yeşil onay işareti başarılı deployment'ı gösterir
-
-#### Manuel Deployment:
-
-GitHub Actions kullanmadan manuel deployment yapmak isterseniz:
-
-SSH kullanarak:
-```bash
-USE_SSH=true npm run deploy
-```
-
-SSH kullanmadan:
-```bash
-GIT_USER=<GitHub kullanıcı adınız> npm run deploy
-```
-
-### Önemli Notlar:
-
-- ✅ **Private Repository:** Repository private olsa bile GitHub Pages sitesi herkese açık olacaktır
-- ✅ **Ücretsiz:** GitHub Pages, private repository'ler için bile tamamen ücretsizdir
-- ✅ **Otomatik Güncelleme:** Her `main` branch'ine push yaptığınızda site otomatik olarak güncellenecektir
-- ⚠️ **İlk Deployment:** İlk deployment'tan sonra sitenizin yayına girmesi 5-10 dakika sürebilir
-- 🔄 **Güncelleme Süresi:** Değişiklikleriniz genellikle 1-2 dakika içinde yayına girer
-
-### Sorun Giderme:
-
-1. **Site yayına girmedi:**
-   - Repository Settings → Pages → Source'un "GitHub Actions" olarak ayarlandığından emin olun
-   - Actions sekmesinden workflow'un başarıyla tamamlandığını kontrol edin
-
-2. **404 Hatası:**
-   - `docusaurus.config.js` dosyasındaki `baseUrl` ve `url` ayarlarının doğru olduğundan emin olun
-   - Bu ayarlar repository adınızla eşleşmelidir
-
-3. **Stil veya Asset Sorunları:**
-   - Tarayıcı cache'ini temizleyin
-   - Birkaç dakika bekleyip tekrar deneyin
-
-## Katkıda Bulunma
-
-Dokümantasyonda değişiklik yapmak için:
-1. Değişikliklerinizi yapın
-2. `main` branch'ine push edin
-3. GitHub Actions otomatik olarak siteyi güncelleyecektir
+Canlı site adresi: [https://pilestin.github.io/opeva-esogu-routing-documentation/](https://pilestin.github.io/opeva-esogu-routing-documentation/)

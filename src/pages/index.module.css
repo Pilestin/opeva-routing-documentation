@@ -1,8 +1,3 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -20,4 +15,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.sectionAlt {
+  background-color: var(--ifm-background-surface-color);
+}
+
+.paperCardCol {
+  margin-bottom: 2rem;
+}
+
+.paperCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.paperCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.paperCard h3 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.journalName {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.moduleRefCol {
+  margin-bottom: 2rem;
 }

@@ -10,14 +10,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Elektrikli Araç Rotalama Dökümantasyonu',
-  tagline: 'EVRP ve RoutingML Çalışmaları',
+  title: 'OPEVA - Filo Yönetim Sistemi ve Rotalama',
+  tagline: 'Elektrikli Araç Rotalama ve Operasyonel Dökümantasyon',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
   url: 'https://pilestin.github.io',
@@ -68,9 +73,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'EVRP & RoutingML',
+        title: 'OPEVA',
         logo: {
-          alt: 'EVRP Logo',
+          alt: 'OPEVA Logo',
           src: 'img/logo.svg',
         },
         items: [
