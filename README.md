@@ -43,9 +43,9 @@ Oluşturulan dosyalar `build` dizini altında yer alır.
 
 ## Deployment (GitHub Pages)
 
-Bu proje GitHub Actions ile otomatik dağıtım yapacak şekilde yapılandırılmıştır. `main` branch'ine yapılan her push işlemi sonrasında site otomatik olarak güncellenir.
+Bu proje GitHub Actions ile otomatik dağıtım yapacak şekilde yapılandırılmıştır. `master` branch'ine yapılan her push işlemi sonrasında site otomatik olarak güncellenir.
 
 **Önemli Yapılandırma:**
 GitHub repository ayarlarında **Settings > Pages > Source** kısmının **GitHub Actions** olarak seçili olduğundan emin olunmalıdır.
 
-Canlı site adresi: [https://pilestin.github.io/opeva-esogu-routing-documentation/](https://pilestin.github.io/opeva-esogu-routing-documentation/)
+Canlı site adresi: [https://pilestin.github.io/opeva-routing-documentation/](https://pilestin.github.io/opeva-routing-documentation/)
