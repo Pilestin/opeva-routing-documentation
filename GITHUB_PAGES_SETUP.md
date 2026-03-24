@@ -29,7 +29,7 @@ Artık her `main` branch'e push yaptığınızda:
 
 Siteniz şu adreste yayında olacak:
 
-**https://pilestin.github.io/opeva-esogu-routing-documentation/**
+**https://pilestin.github.io/opeva-routing-documentation/**
 
 ## 📊 Deployment Durumunu Kontrol
 

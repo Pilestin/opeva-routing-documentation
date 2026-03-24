@@ -57,7 +57,7 @@ git push origin main
 Deployment tamamlandıktan sonra siteniz şu adreste erişilebilir olacaktır:
 
 ```
-https://pilestin.github.io/opeva-esogu-routing-documentation/
+https://pilestin.github.io/opeva-routing-documentation/
 ```
 
 > ⏱️ **Not:** İlk deployment'tan sonra sitenizin aktif olması 5-10 dakika sürebilir.
@@ -146,7 +146,7 @@ Actions sekmesinden "Deploy to GitHub Pages" workflow'unu seçip "Run workflow" 
 
 **Çözüm:**
 - `docusaurus.config.js` dosyasındaki `baseUrl` değerini kontrol edin
-- Şu şekilde olmalı: `/opeva-esogu-routing-documentation/`
+- Şu şekilde olmalı: `/opeva-routing-documentation/`
 - Değişiklik yaptıysanız yeniden build edin
 
 ### CSS/JavaScript Dosyaları Yüklenmiyor
@@ -190,4 +190,4 @@ Bu hata şu anda `warn` seviyesinde - build'i durdurmaz. Ancak düzeltmek isters
 
 Artık private repository'nizdeki Docusaurus siteniz herkese açık bir URL'de yayında! Her değişiklik otomatik olarak yayınlanacaktır.
 
-**Site URL:** https://pilestin.github.io/opeva-esogu-routing-documentation/
+**Site URL:** https://pilestin.github.io/opeva-routing-documentation/

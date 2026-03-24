@@ -26,13 +26,13 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://pilestin.github.io',
-  baseUrl: '/opeva-esogu-routing-documentation/',
+  baseUrl: '/opeva-routing-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // GitHub pages deployment config
   organizationName: 'Pilestin', // GitHub kullanıcı adınız
-  projectName: 'opeva-esogu-routing-documentation', // Repo adınız
+  projectName: 'opeva-routing-documentation', // Repo adınız
 
   onBrokenLinks: 'warn', // 'throw' yerine 'warn' yapın
 
