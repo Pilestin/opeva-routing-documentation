@@ -28,6 +28,11 @@ Create sections/pages for:
 - Existing sections: routing + fleet management (preserve and integrate)
 
 ## Requirements
+0. **Technology Constraint (Important)**  
+   - Keep and evolve the existing **Docusaurus** stack.  
+   - Do **not** propose migrating to another framework unless explicitly requested.  
+   - Focus on improving IA, content model, theme/customization, and page structure within Docusaurus.
+
 1. **Modern UI/UX**  
    - Replace the current generic look with a cleaner and more modern visual identity.  
    - Improve typography, spacing, cards, section hierarchy, and homepage storytelling.  
@@ -81,4 +86,3 @@ Return:
 If helpful, split the work into specialized agents (IA agent, UI agent, content agent, migration agent), then provide a final merged plan.
 
 ---
-
