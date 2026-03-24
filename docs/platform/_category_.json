@@ -1,0 +1,8 @@
+{
+  "label": "Platform (Routing & Fleet)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Technical documentation for the OPEVA routing engine and fleet management system."
+  }
+}

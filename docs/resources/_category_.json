@@ -1,0 +1,8 @@
+{
+  "label": "Resources (Media & Research)",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Research papers, articles, demos, and walkthroughs."
+  }
+}

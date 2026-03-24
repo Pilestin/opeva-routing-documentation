@@ -64,28 +64,28 @@ const AcademicPapers = [
 
 const Modules = [
   {
-    title: 'Filo Yönetimi',
-    description: 'Gerçek zamanlı araç takibi, telemetri verileri ve saha operasyon yönetimi.',
-    to: '/docs/fleet-management/introduction',
-    icon: '🚚',
+    title: 'Project Overview',
+    description: 'Vision, mission, and scope of the OPEVA project across all workstreams.',
+    to: '/docs/overview/introduction',
+    icon: '🌐',
   },
   {
-    title: 'Rota Optimizasyonu',
-    description: 'ALNS, DQN ve A* algoritmaları ile verimli güzergah planlama.',
-    to: '/docs/fleet-management/route-optimization',
-    icon: '📍',
+    title: 'Platform Architecture',
+    description: 'Deep dive into the Routing Engine, Fleet Management, and AI/ML services.',
+    to: '/docs/platform/',
+    icon: '🏗️',
   },
   {
-    title: 'RoutingML',
-    description: 'Rotalama problemleri için standartlaştırılmış XML veri şeması (v1.05).',
-    to: '/docs/routing-ml/introduction',
-    icon: '📄',
+    title: 'Ecosystem Tools',
+    description: 'Internal dashboards, repositories, and automation scripts for developers.',
+    to: '/docs/ecosystem/',
+    icon: '🛠️',
   },
   {
-    title: 'Makine Öğrenmesi',
-    description: 'Enerji tahmini, SoC analizi ve Federated Learning süreçleri.',
-    to: '/docs/fleet-management/ml-services',
-    icon: '🧠',
+    title: 'Research & Media',
+    description: 'Academic papers, technical specifications, and project demo videos.',
+    to: '/docs/resources/',
+    icon: '📚',
   }
 ];
 
@@ -97,12 +97,12 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">Unified Documentation Portal for OPEVA Ecosystem</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Dökümantasyonu İncele
+            to="/docs/overview/introduction">
+            Explore Documentation
           </Link>
         </div>
       </div>
@@ -156,7 +156,7 @@ export default function Home() {
       <main>
         <section className={styles.section}>
           <div className="container">
-            <Heading as="h2" className="text--center margin-bottom--lg">Sistem Modülleri</Heading>
+            <Heading as="h2" className="text--center margin-bottom--lg">Core Workstreams</Heading>
             <div className="row">
               {Modules.map((props, idx) => (
                 <ModuleRef key={idx} {...props} />
@@ -167,7 +167,7 @@ export default function Home() {
 
         <section className={clsx(styles.section, styles.sectionAlt)}>
           <div className="container">
-            <Heading as="h2" className="text--center margin-bottom--lg">Akademik Yayınlar</Heading>
+            <Heading as="h2" className="text--center margin-bottom--lg">Academic Contributions</Heading>
             <div className="row">
               {AcademicPapers.map((props, idx) => (
                 <PaperCard key={idx} {...props} />

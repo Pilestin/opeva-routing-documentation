@@ -26,13 +26,13 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://pilestin.github.io',
-  baseUrl: '/opeva-routing-documentation/',
+  baseUrl: '/opeva-esogu-routing-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // GitHub pages deployment config
   organizationName: 'Pilestin', // GitHub kullanıcı adınız
-  projectName: 'opeva-routing-documentation', // Repo adınız
+  projectName: 'opeva-esogu-routing-documentation', // Repo adınız
 
   onBrokenLinks: 'warn', // 'throw' yerine 'warn' yapın
 
@@ -56,7 +56,13 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,50 +89,70 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Dökümantasyon',
+            label: 'Documentation',
           },
+          {
+            to: '/docs/overview/introduction',
+            label: 'Overview',
+            position: 'left',
+          },
+          {
+            to: '/docs/platform/',
+            label: 'Platform',
+            position: 'left',
+          },
+          {
+            to: '/docs/ecosystem/',
+            label: 'Ecosystem',
+            position: 'left',
+          },
+          {
+            to: '/docs/resources/',
+            label: 'Resources',
+            position: 'left',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Dökümantasyon',
+            title: 'OPEVA Project',
             items: [
               {
-                label: 'Giriş',
-                to: '/docs/intro',
+                label: 'Overview',
+                to: '/docs/overview/introduction',
               },
               {
-                label: 'EVRP Temelleri',
-                to: '/docs/evrp-fundamentals/introduction',
+                label: 'Platform Architecture',
+                to: '/docs/platform/',
               },
               {
-                label: 'RoutingML',
-                to: '/docs/routing-ml/introduction',
+                label: 'Ecosystem Tools',
+                to: '/docs/ecosystem/',
               },
             ],
           },
           {
-            title: 'Algoritmalar',
+            title: 'Resources',
             items: [
               {
-                label: 'ALNS',
-                to: '/docs/algorithms/alns-overview',
+                label: 'Research Papers',
+                to: '/docs/resources/research/papers',
               },
-            ],
-          },
-          {
-            title: 'Filo Yönetimi',
-            items: [
               {
-                label: 'Sistem Mimarisi',
-                to: '/docs/fleet-management/architecture',
+                label: 'Media & Videos',
+                to: '/docs/resources/media/videos',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} EVRP & RoutingML Dökümantasyonu. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} OPEVA Documentation Portal. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
