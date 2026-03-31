@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 const AcademicPapers = [
@@ -104,6 +105,12 @@ function HomepageHeader() {
             to="/docs/overview/introduction">
             Explore Documentation
           </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            style={{ marginLeft: '1rem', color: '#fff', borderColor: '#fff' }}
+            to="/docs/ecosystem/repositories">
+            View Repositories
+          </Link>
         </div>
       </div>
     </header>
@@ -154,7 +161,9 @@ export default function Home() {
       description="ESOGÜ OPEVA Filo Yönetim Sistemi ve Rotalama Optimizasyonu Teknik Dökümantasyonu">
       <HomepageHeader />
       <main>
-        <section className={styles.section}>
+        <HomepageFeatures />
+        
+        <section className={clsx(styles.section, styles.sectionAlt)}>
           <div className="container">
             <Heading as="h2" className="text--center margin-bottom--lg">Core Workstreams</Heading>
             <div className="row">
@@ -165,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={clsx(styles.section, styles.sectionAlt)}>
+        <section className={styles.section}>
           <div className="container">
             <Heading as="h2" className="text--center margin-bottom--lg">Academic Contributions</Heading>
             <div className="row">
