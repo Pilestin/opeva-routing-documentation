@@ -95,29 +95,27 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'overviewSidebar',
             position: 'left',
-            label: 'Documentation',
-          },
-          {
-            to: '/docs/overview/introduction',
             label: 'Overview',
-            position: 'left',
           },
           {
-            to: '/docs/platform/',
+            type: 'docSidebar',
+            sidebarId: 'platformSidebar',
+            position: 'left',
             label: 'Platform',
-            position: 'left',
           },
           {
-            to: '/docs/ecosystem/',
+            type: 'docSidebar',
+            sidebarId: 'ecosystemSidebar',
+            position: 'left',
             label: 'Ecosystem',
-            position: 'left',
           },
           {
-            to: '/docs/resources/',
-            label: 'Resources',
+            type: 'docSidebar',
+            sidebarId: 'resourcesSidebar',
             position: 'left',
+            label: 'Resources',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -137,12 +135,12 @@ const config = {
                 to: '/docs/overview/introduction',
               },
               {
-                label: 'Platform Architecture',
-                to: '/docs/platform/',
+                label: 'Features & Architecture',
+                to: '/docs/platform/evrp-fundamentals/introduction',
               },
               {
-                label: 'Ecosystem Tools',
-                to: '/docs/ecosystem/',
+                label: 'Ecosystem & Tools',
+                to: '/docs/ecosystem/tools',
               },
             ],
           },

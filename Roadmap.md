@@ -41,7 +41,7 @@ Create sections/pages for:
 2. **Information Architecture**  
    - Propose a new sitemap and sidebar structure.  
    - Group content by domain (e.g., Platform, AI/ML, Routing, Fleet Ops, Integrations, Research, Media).  
-   - Keep navigation simple for both technical and non-technical users.
+   - Keep navigation simple for both technical and non-technical **users**.
 
 3. **Content System**  
    - Define reusable templates for pages such as:

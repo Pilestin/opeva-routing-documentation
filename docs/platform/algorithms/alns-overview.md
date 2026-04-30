@@ -279,7 +279,4 @@ class ALNS:
 
 ## Sonraki Adımlar
 
-- [ALNS Implementasyonu](./implementation)
-- [Parametre Ayarlama](./parameter-tuning)
-- [Sonuç Analizi](./result-analysis)
-- [Benchmark Testler](./benchmarks)
+- [Parametre Ayarlama](./parameter-tuning.md)
