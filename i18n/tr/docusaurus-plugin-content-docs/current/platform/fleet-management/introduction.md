@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Genel Bakış
 
-ESOGÜ OPEVA Filo Yönetim Sistemi (FMS), elektrikli araç filolarının verimli bir şekilde yönetilmesi, izlenmesi ve rotalarının optimize edilmesi amacıyla geliştirilmiş uçtan uca bir platformdur.
+ OPEVA Filo Yönetim Sistemi (FMS), elektrikli araç filolarının verimli bir şekilde yönetilmesi, izlenmesi ve rotalarının optimize edilmesi amacıyla geliştirilmiş uçtan uca bir platformdur.
 
 ## Sistemin Amacı
 

@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Kurulum Rehberi
 
-Bu bölüm, ESOGÜ OPEVA Filo Yönetim Sistemi'nin yerel veya sunucu ortamında uçtan uca kurulum adımlarını içerir.
+Bu bölüm,  OPEVA Filo Yönetim Sistemi'nin yerel veya sunucu ortamında uçtan uca kurulum adımlarını içerir.
 
 ## Gereksinimler
 

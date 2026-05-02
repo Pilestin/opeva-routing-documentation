@@ -6,7 +6,7 @@ sidebar_position: 5
 
 OPEVA projesi kapsamında geliştirilen sistemler, sadece teorik modellerde değil, gerçek saha verileriyle test edilmiş senaryolar üzerinde doğrulanmıştır.
 
-## 1. ESOGÜ Kampüs Lojistik Senaryosu
+## 1.  Kampüs Lojistik Senaryosu
 Bu senaryo, Polat et al. (2025) çalışmasında detaylandırılan kampüs içi teslimat ağını temel alır.
 - **Kapsam:** Kampüs içerisindeki fakülteler, idari birimler ve yemekhane arasındaki lojistik akış.
 - **Özellik:** Yüksek eğim farkları olan bir coğrafyada elektrikli hafif ticari araçların (L5 tipi) performans analizi.
