@@ -58,3 +58,9 @@
 .footer {
   background-color: #1A202C;
 }
+
+/* Markdown text alignment */
+.markdown p,
+.markdown li {
+  text-align: justify;
+}

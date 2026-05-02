@@ -2,48 +2,62 @@
 sidebar_position: 1
 ---
 
-# Introduction to OPEVA Portal
+# OPEVA Portalına Giriş
 
-Welcome to the **OPEVA (Optimization of Electric Vehicle Actions)** Unified Documentation Portal.
+**OPEVA (Elektrikli Araç Hareketlerinin Optimizasyonu)** Birleşik Dokümantasyon Portalına hoş geldiniz.
 
-This portal serves as a central hub for all research, development, and operational documentation related to the OPEVA project, specifically focusing on **Electric Vehicle Routing Problems (EVRP)**, **Fleet Management Systems**, and the **Routing Markup Language (RoutingML)**.
+Bu portal, özellikle **Elektrikli Araç Rotalama Problemleri (EVRP)**, **Filo Yönetim Sistemleri** ve **Rotalama İşaretleme Dili (RoutingML)** konularına odaklanarak, OPEVA projesiyle ilgili tüm araştırma, geliştirme ve operasyonel dokümantasyon için merkezi bir merkez görevi görmektedir.
 
-## Project Vision
+## Proje Vizyonu
 
-OPEVA aims to revolutionize urban logistics by providing an end-to-end ecosystem for electric vehicle optimization. Our goal is to answer the critical question: **"How can we maximize the efficiency of electric fleets through intelligent routing and data-driven management?"**
+OPEVA, elektrikli araç optimizasyonu için uçtan uca bir ekosistem sağlayarak kentsel lojistiği devrimleştirmeyi amaçlamaktadır. Amacımız şu kritik soruyu yanıtlamaktır: **"Akıllı rotalama ve veri odaklı yönetim yoluyla elektrikli filoların verimliliğini nasıl en üst düzeye çıkarabiliriz?"**
 
-### Core Workstreams
+### Temel Çalışma Alanları
 
-- **🌍 Project Overview**: High-level vision, partner collaborations, and project milestones.
-- **🏗️ Platform & Architecture**: Deep technical documentation of our Routing Engine (ALNS, A*), Fleet Management dashboards, and AI/ML energy prediction services.
-- **🛠️ Ecosystem & Tools**: Internal utilities, standardized schemas (RoutingML), and automation scripts.
-- **📚 Resources**: A comprehensive library of academic papers, technical specifications, and demo videos.
+- **🌍 Proje Genel Bakışı**: Üst düzey vizyon, ortak iş birlikleri ve proje kilometre taşları.
 
-## Key Research Areas
+- **🏗️ Platform ve Mimari**: Rotalama Motorumuzun (ALNS, A*), Filo Yönetimi panolarının ve yapay zeka/makine öğrenimi enerji tahmin hizmetlerinin derinlemesine teknik dokümantasyonu.
 
-🔋 **EV Optimization**
-- Battery capacity constraints and charging strategies.
-- Real-world energy consumption modeling using ML.
-- Recharging station location and timing optimization.
+- **🛠️ Ekosistem ve Araçlar**: Dahili yardımcı programlar, standartlaştırılmış şemalar (RoutingML) ve otomasyon komut dosyaları.
 
-📊 **Routing Markup Language (RoutingML)**
-- Standardized XML/JSON schemas for routing problems (v1.05).
-- Seamless interoperability between different solvers and clients.
-- API standardization for logistics platforms.
+- **📚 Kaynaklar**: Kapsamlı bir akademik makale, teknik özellik ve demo video kütüphanesi.
 
-🔧 **Advanced Algorithms**
-- **ALNS**: Adaptive Large Neighborhood Search for complex EVRP.
-- **DQN & RL**: Reinforcement learning approaches for dynamic routing.
-- **A* Integration**: Multi-modal pathfinding and traffic-aware routing.
+## Temel Araştırma Alanları
 
-🏢 **Fleet Operations**
-- Real-time telemetry and vehicle tracking.
-- Health monitoring and predictive maintenance.
-- Operational cost analysis and performance metrics.
+🔋 **Elektrikli Araç Optimizasyonu**
+- Batarya kapasitesi kısıtlamaları ve şarj stratejileri.
 
-## Getting Started
+- Makine öğrenimi kullanarak gerçek dünya enerji tüketimi modellemesi.
 
-Explore the different sections via the top navigation bar or the sidebar:
-- Visit **[Platform](/docs/platform/)** for technical implementation details.
-- Check **[Research](/docs/resources/research/papers)** for academic publications.
-- Browse **[Tools](/docs/ecosystem/tools)** for developer utilities.
+- Şarj istasyonu konum ve zamanlama optimizasyonu.
+
+📊 **Rotalama İşaretleme Dili (RoutingML)**
+- Rotalama problemleri için standartlaştırılmış XML/JSON şemaları (v1.05).
+
+- Farklı çözücüler ve istemciler arasında sorunsuz birlikte çalışabilirlik.
+
+- Lojistik platformları için API standardizasyonu.
+
+🔧 **Gelişmiş Algoritmalar**
+- **ALNS**: Karmaşık EVRP için Uyarlanabilir Geniş Komşuluk Araması.
+
+- **DQN ve RL**: Dinamik yönlendirme için takviyeli öğrenme yaklaşımları.
+
+- **A* Entegrasyonu**: Multi objective route planning ve trafiğe duyarlı yönlendirme.
+
+🏢 **Filo Operasyonları**
+- Gerçek zamanlı telemetri ve araç takibi.
+
+- Health monitoring
+
+- Operasyonel maliyet analizi ve performans metrikleri.
+
+## Başlangıç
+
+Üst gezinme çubuğu veya yan çubuk aracılığıyla farklı bölümleri keşfedin:
+
+- Teknik uygulama ayrıntıları için **[Platform](/docs/platform/)**'u ziyaret edin.
+
+- Akademik yayınlar için **[Araştırma](/docs/resources/research/papers)**'ı kontrol edin.
+
+- Geliştirici yardımcı programları için **[Araçlar](/docs/ecosystem/tools)** bölümüne göz atın.
