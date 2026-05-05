@@ -1,13 +1,15 @@
 # ESOGU OPEVA Rotalama Dökümantasyonu
 
-Bu proje, ESOGÜ OPEVA Elektrikli Araç Filo Yönetimi ve Rota Optimizasyonu sistemi için hazırlanan teknik dökümantasyon sitesidir. Docusaurus framework'ü kullanılarak geliştirilmiştir.
+Bu proje,  OPEVA Elektrikli Araç Filo Yönetimi ve Rota Optimizasyonu sistemi için hazırlanan teknik dökümantasyon sitesidir. Docusaurus framework'ü kullanılarak geliştirilmiştir.
 
 ## İçindekiler
-1. [Projenin Amacı](#projenin-amacı)
-2. [Dökümantasyon İçeriği](#dökümantasyon-içeriği)
-3. [Kurulum ve Yerel Geliştirme](#kurulum-ve-yerel-geliştirme)
-4. [Derleme (Build)](#derleme-build)
-5. [Deployment (GitHub Pages)](#deployment-github-pages)
+- [ESOGU OPEVA Rotalama Dökümantasyonu](#esogu-opeva-rotalama-dökümantasyonu)
+  - [İçindekiler](#i̇çindekiler)
+  - [Projenin Amacı](#projenin-amacı)
+  - [Dökümantasyon İçeriği](#dökümantasyon-i̇çeriği)
+  - [Kurulum ve Yerel Geliştirme](#kurulum-ve-yerel-geliştirme)
+  - [Derleme (Build)](#derleme-build)
+  - [Deployment (GitHub Pages)](#deployment-github-pages)
 
 ## Projenin Amacı
 Bu dökümantasyonun temel amacı, OPEVA projesi kapsamında geliştirilen filo yönetim sisteminin teknik altyapısını, kullanılan algoritmaları, veri standartlarını ve sistem kurulum süreçlerini merkezi bir kaynakta toplamaktır. Geliştiriciler ve sistem yöneticileri için bir rehber niteliği taşımaktadır.

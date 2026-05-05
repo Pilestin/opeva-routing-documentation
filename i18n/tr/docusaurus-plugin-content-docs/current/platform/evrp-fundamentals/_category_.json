@@ -1,8 +1,8 @@
 {
-  "label": "EVRP Temelleri",
+  "label": "VRP Temelleri",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Elektrikli Araç Rotalama Problemlerinin temel kavramları, kısıtları ve formülasyonları."
+    "description": "Araç rotalama problemlerinin (VRP) temel kavramları; elektrikli araç (EVRP) kısıtları ilgili alt içeriklerde ele alınır."
   }
 }

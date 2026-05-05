@@ -4,34 +4,50 @@ sidebar_position: 1
 
 # Elektrikli Araç Rotalama Problemine Giriş
 
-Elektrikli Araç Rotalama Problemi (Electric Vehicle Routing Problem - EVRP), klasik araç rotalama probleminin elektrikli araçların özel kısıtlarını dikkate alan bir uzantısıdır.
+# Araç Rotalama Problemine (VRP) Giriş
+
+Araç Rotalama Problemi (Vehicle Routing Problem - **VRP**), bir filodaki araçların depo(lar)dan çıkıp müşteri noktalarına uğrayarak belirli kısıtlar altında en iyi (en düşük maliyetli) rotaları oluşturmasını hedefleyen klasik bir optimizasyon problemidir.
+
+**EVRP (Electric Vehicle Routing Problem)** ise VRP'nin, elektrikli araçlara özgü **batarya** ve **şarj** kısıtlarını da içeren alt türüdür. Bu bölüm, önce VRP'yi genel çerçevede ele alır; elektrikli araçlara özel konular ise ilgili alt sayfalarda derinleştirilir.
 
 ## Problem Tanımı
 
-EVRP, elektrikli araçların sınırlı batarya kapasitesi, şarj istasyonlarının konumu ve şarj süreleri gibi ek kısıtlamaları dikkate alarak optimal rotaların belirlenmesini amaçlar.
+VRP'de amaç; müşteri taleplerini karşılarken (kapasite, zaman pencereleri, süre/mesafe limitleri gibi) kısıtları ihlal etmeden, toplam maliyeti (mesafe, süre, araç sayısı, operasyonel maliyet vb.) minimize edecek rotaları bulmaktır.
 
 ### Temel Bileşenler
 
 1. **Müşteri Noktaları**: Servis verilmesi gereken lokasyonlar
 2. **Depo**: Araçların başlangıç ve bitiş noktası  
-3. **Şarj İstasyonları**: Elektrikli araçların bataryalarını şarj edebilecekleri noktalar
-4. **Elektrikli Araç Filosu**: Belirli batarya kapasitesine ve yük kapasitesine sahip araçlar
+3. **Araç Filosu**: Belirli yük kapasitesine/sürüş kısıtlarına sahip araçlar
+4. **Kısıtlar**: Kapasite, zaman penceresi, rota süresi/mesafe limitleri vb.
 
-## EVRP Varyantları
+Elektrikli araçlar söz konusu olduğunda ek olarak:
 
-### E-VRP (Electric Vehicle Routing Problem)
-Temel elektrikli araç rotalama problemi. Araçlar depodan çıkar, müşterilere hizmet verir ve gerektiğinde şarj istasyonlarına uğrayarak depoya geri döner.
+5. **Şarj İstasyonları**: Bataryanın şarj edilebildiği noktalar
+6. **Batarya/Enerji Modeli**: Enerji tüketimi ve şarj davranışı
 
-### E-VRPTW (with Time Windows)
-Müşterilerin belirli zaman pencerelerinde ziyaret edilmesi gereksinimine sahip varyant.
+## VRP Varyantları
 
-### E-VRPNL (with Nonlinear Charging)  
-Şarj süresinin doğrusal olmayan (gerçek hayata daha yakın) şarj fonksiyonlarını dikkate alan varyant.
+### CVRP (Capacitated VRP)
+Araçların yük kapasitesi kısıtı altında VRP.
+
+### VRPTW (with Time Windows)
+Müşterilerin belirli zaman pencerelerinde ziyaret edilmesi gerekir.
+
+### EVRP (Electric Vehicle Routing Problem)
+Elektrikli araçların batarya kapasitesi, enerji tüketimi ve şarj kararlarını içeren VRP alt türü.
+
+### E-VRPNL (with Nonlinear Charging)
+Şarj süresinin doğrusal olmayan (gerçek hayata daha yakın) şarj fonksiyonlarını dikkate alan EVRP varyantı.
 
 ### E-FSMFTW (Fleet Size Mix with Time Windows)
-Farklı kapasitelerde araçların bulunduğu heterojen filo yapısını dikkate alan varyant.
+Farklı kapasitelerde araçların bulunduğu heterojen filo yapısını içeren EVRP varyantı.
 
 ## Önemli Kısıtlar
+
+### Yük Kapasitesi
+- Her aracın maksimum yük taşıma kapasitesi vardır
+- Toplam müşteri talebi kapasite sınırını aşamaz
 
 ### Batarya Kapasitesi
 - Her aracın sınırlı bir batarya kapasitesi vardır
@@ -48,13 +64,9 @@ Farklı kapasitelerde araçların bulunduğu heterojen filo yapısını dikkate 
 - Erken varış durumunda bekleme süresi oluşur
 - Geç varış kabul edilmez
 
-### Yük Kapasitesi
-- Her aracın maksimum yük taşıma kapasitesi vardır
-- Toplam müşteri talebi kapasite sınırını aşamaz
-
 ## Amaç Fonksiyonu
 
-EVRP'nin tipik amaçları:
+VRP/EVRP'nin tipik amaçları:
 
 - ✅ Toplam kat edilen mesafeyi minimize etmek
 - ✅ Kullanılan araç sayısını minimize etmek  
@@ -64,7 +76,7 @@ EVRP'nin tipik amaçları:
 
 ## Zorluklar ve Karmaşıklık
 
-EVRP, NP-Hard bir optimizasyon problemidir ve aşağıdaki zorluklarıdikkatedir:
+VRP/EVRP, NP-Hard bir optimizasyon problemidir ve aşağıdaki zorluklar öne çıkar:
 
 - 🔴 **Kombinatoryal Karmaşıklık**: Müşteri sayısı arttıkça olası rota sayısı faktöriyel olarak artar
 - 🔴 **Şarj İstasyonu Kararları**: Hangi istasyonda, ne zaman ve ne kadar şarj yapılacağı
@@ -82,11 +94,11 @@ EVRP, NP-Hard bir optimizasyon problemidir ve aşağıdaki zorluklarıdikkatedir
 
 ## Sonraki Adımlar
 
-Bu bölümde EVRP'nin temel kavramlarını öğrendiniz. Devam eden sayfalarda:
+Bu bölümde VRP'nin genel çerçevesini, EVRP'nin ise VRP'nin bir alt türü olduğunu gördünüz.
 
-- Matematiksel formülasyon
-- Enerji tüketim modelleri
-- Şarj stratejileri
-- Gerçek dünya senaryoları
+## Continue with
 
-hakkında detaylı bilgi bulabilirsiniz.
+- [Matematiksel Formülasyon](./mathematical-formulation)
+- [Enerji Tüketimi](./energy-consumption)
+- [Şarj Stratejileri](./charging-strategies)
+- [Gerçek Dünya Senaryoları](./real-world-scenarios)
