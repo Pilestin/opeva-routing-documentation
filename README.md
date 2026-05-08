@@ -1,5 +1,7 @@
 # ESOGU OPEVA Rotalama Dökümantasyonu
 
+[![Canlı Dokümantasyon](https://img.shields.io/badge/Dok%C3%BCmantasyon-Canl%C4%B1-2ea44f?logo=github&logoColor=white)](https://pilestin.github.io/opeva-routing-documentation/)
+
 Bu proje,  OPEVA Elektrikli Araç Filo Yönetimi ve Rota Optimizasyonu sistemi için hazırlanan teknik dökümantasyon sitesidir. Docusaurus framework'ü kullanılarak geliştirilmiştir.
 
 ## İçindekiler
